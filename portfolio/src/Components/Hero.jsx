@@ -2,7 +2,7 @@
 
 const Hero = () => {
   return (
-    <section id="home" className="w-full px-8 py-10 bg-background">
+    <section id="home" className="w-full px-8 py-10">
         <div className="flex flex-col items-center lg:flex-row lg:justify-between lg:items-center max-w-6xl mx-auto mt-15">
             <div className="flex flex-col items-center justify-center space-y-4">
                 <div className="text-center border-1 border-primary px-2 py-1 rounded-full hover:text-primary">
