@@ -1,26 +1,26 @@
  export const menu = [
     {
         label: 'Home',
-        url: '#home'
+        url: 'home'
     },
     {
         label: 'About Me',
-        url: '#about'
+        url: 'about'
     },
     {
         label: 'Portfolio',
-        url: '#portfolio'
+        url: 'portfolio'
     },
     {
         label: 'Skills',
-        url: '#skills'
+        url: 'skills'
     },
     {
         label: 'Testimonial',
-        url: '#testimonial'
+        url: 'testimonial'
     },
     {
         label: 'Contacts',
-        url: '#contacts'
+        url: 'contacts'
     }
 ]
