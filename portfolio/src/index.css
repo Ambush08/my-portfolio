@@ -4,13 +4,44 @@ body{
     font-family: 'Manrope', sans-serif;
 }
 
+:root {
+  --app-primary: #5e3bee;
+  --app-heading: #282938;
+  --app-background: #ffffff;
+  --app-text: #282938;
+}
+
+[data-theme="dark"] {
+  --app-primary: #5e3bee;
+  --app-heading: #ffffff;
+  --app-background: #111827;
+  --app-text: #ffffff;
+}
 
 @theme {
-    --color-primary: #5e3bee;
-    --color-heading: #282938;
-    --color-github: #e62872;
-    --colo-darkblue: #1c1e53;
-    --color-black: #000;
-    --color-white: #fff;
+  --color-primary: var(--app-primary);
+  --color-heading: var(--app-heading);
+  --color-background: var(--app-background);
+  --color-text: var(--app-text);
+}
+
+.nav-active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100vh;
+    background-color: #5e3bee;
+    color: white;
+    padding-top: 5em;
+    font-size: 1.15rem;
+}  
+
+.nav-active li a:hover{
+    color: #1c1e53;
 }
 
