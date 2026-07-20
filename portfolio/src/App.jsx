@@ -1,6 +1,7 @@
 import {useEffect} from 'react';
 import useLocalStorage from './Components/useLocalStorage';
 import Navbar from "./Components/Navbar";
+import Home from './Pages/Home';
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
   return (
     <>
     <Navbar theme={theme} setTheme={setTheme}/>
+    <Home />
     </>
   )
 }
