@@ -30,14 +30,14 @@ export const skills = [
         title: 'Frontend',
         description: "Lorem ipsum dolore",
         list: [
-            "HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "Redux Toolkit"
+            "HTML5", "CSS3", "JavaScript", "Framer Motion", "React", "Tailwind CSS", "Redux Toolkit"
         ]
     },
      {
         title: 'Backend',
         description: "Lorem ipsum dolore",
         list:[
-            "Node.js", "Express.js", "NestJS", "MongoDB", "MySQL", "REST APIs"
+            "Node.js", "Express.js", "MongoDB", "MySQL", "REST APIs"
         ]
     },
      {

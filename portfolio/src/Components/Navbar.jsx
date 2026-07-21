@@ -42,11 +42,11 @@ const Navbar = ({ theme, setTheme }) => {
           )}
         </button>
         <ul ref={menuRef}
-          className={`${isOpen ? "block" : "hidden"} ${isOpen ? "nav-active" : ""} lg:flex lg:justify-between lg:items-center lg:gap-5 lg:font-bold text-heading text-lg`}
+          className={`${isOpen ? "block" : "hidden"} ${isOpen ? "nav-active" : ""} lg:flex lg:justify-between lg:items-center lg:gap-5 lg:font-semibold text-heading text-lg`}
         >
           {menu.map((item) => {
             return (
-              <li key={item.label} className={`hover:text-primary ${location.pathname === item.url && 'text-primary border-b-2 border-primary'}`}>
+              <li key={item.label} className={`hover:text-primary ${location.pathname === item.url && 'lg:text-primary border-b-2 border-primary'}`}>
                 <Link
                   to={item.url}
                   onClick={() => {

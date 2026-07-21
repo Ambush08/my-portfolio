@@ -5,7 +5,7 @@ const Hero = () => {
 
   return (
     <section id="home" className="w-full px-8 py-10 bg-background h-100vh">
-      <div className="flex flex-col items-center lg:flex-row lg:justify-between lg:items-center max-w-6xl mx-auto mt-35 lg:mt-20 pb-10">
+      <div className="flex flex-col items-center lg:flex-row lg:justify-between lg:items-center max-w-6xl mx-auto mt-35 lg:mt-20 pb-14">
         <div className="flex flex-col items-center justify-center space-y-6 ">
           <div className="text-center border-1 border-primary px-2 py-1 rounded-full lg:text-left lg:w-full lg:border-0">
             <h3 className="font-semibold text-2xl lg:text-3xl lg:text-left bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent">
@@ -41,7 +41,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="py-4">
+        <div className="py-6">
           <img src="img/me.png" alt="" />
         </div>
       </div>
