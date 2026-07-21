@@ -8,21 +8,28 @@ body{
   --app-primary: #5e3bee;
   --app-heading: #282938;
   --app-background: #ffffff;
-  --app-text: #282938;
+  --app-background-two:#F0EDEE;
+  --app-header: #ffffff;
+  --app-github: #e62872;
+  
 }
 
 [data-theme="dark"] {
   --app-primary: #5e3bee;
   --app-heading: #ffffff;
   --app-background: #111827;
-  --app-text: #ffffff;
+  --app-background-two: #2A2D43;
+  --app-header: #0C1B33;
+  --app-github: #e62872;
 }
 
 @theme {
   --color-primary: var(--app-primary);
   --color-heading: var(--app-heading);
   --color-background: var(--app-background);
-  --color-text: var(--app-text);
+  --color-background-two: var(--app-background-two);
+  --color-header: var(--app-header);
+  --color-github: var(--app-github);
 }
 
 .nav-active{

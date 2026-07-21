@@ -25,23 +25,33 @@
     }
 ]
 
-export const skills = {
-    Frontend: {
+export const skills = [
+     {
+        title: 'Frontend',
         description: "Lorem ipsum dolore",
         list: [
-            "HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS","Redux Toolkit"
+            "HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "Redux Toolkit"
         ]
     },
-    Backend: {
+     {
+        title: 'Backend',
         description: "Lorem ipsum dolore",
         list:[
             "Node.js", "Express.js", "NestJS", "MongoDB", "MySQL", "REST APIs"
         ]
     },
-    Tools: {
+     {
+        title: 'Tools',
         description: "Lorem ipsum dolore",
         list:[
             "Git", "GitHub", "VS Code", "Postman", "Figma", "Vercel"
         ]
+    },
+    {
+        title: 'Deployment',
+        description: "Lorem ipsum dolore",
+        list:[
+            "GitHub", "Vercel", "cPanel", "Netlify", 
+        ]
     }
-};
+];
