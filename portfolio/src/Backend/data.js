@@ -1,7 +1,7 @@
  export const menu = [
     {
         label: 'Home',
-        url: 'home'
+        url: '/'
     },
     {
         label: 'About Me',
