@@ -12,7 +12,7 @@ const About = () => {
             <img src="img/me.png" alt="" />
           </div>
 
-          <div className="flex flex-col items-center justify-center space-y-6">
+          <div className="flex flex-col items-center justify-center space-y-6 lg:w-[60%]">
             <div className="text-primary text-center lg:text-left lg:w-full font-semibold mb-4">
               <h2 className="">ABOUT ME</h2>
             </div>
