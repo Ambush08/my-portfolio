@@ -4,7 +4,7 @@ const About = () => {
 
   return (
     <Element name='about'>
-      <section
+      <section id="about"
         className="w-full px-8 py-10 bg-background-two text-heading"
       >
         <div className="flex flex-col flex-col-reverse items-center justify-center max-w-6xl mx-auto mt-15 lg:flex-row gap-10">

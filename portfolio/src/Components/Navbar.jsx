@@ -24,7 +24,7 @@ const Navbar = ({ theme, setTheme }) => {
         <Link
           to="home"
           smooth={true}
-          duration={500}
+          duration={300}
           offset={-80}
           className="text-2xl font-extrabold lg:text-4xl cursor-pointer"
         >
@@ -47,7 +47,7 @@ const Navbar = ({ theme, setTheme }) => {
         >
           {menu.map((item) => {
             return (
-              <li key={item.label} className={`hover:text-primary`}>
+              <li key={item.label} className={`hover:text-primary cursor-pointer`}>
                 <Link
                   to={item.url}
                   smooth={true}

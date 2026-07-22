@@ -3,7 +3,7 @@ import { Link, Element } from "react-scroll";
 const Hero = () => {
   return (
     <Element name="home">
-      <section className="w-full px-8 py-10 bg-background h-100vh">
+      <section id="home" className="w-full px-8 py-10 bg-background h-100vh">
         <div className="flex flex-col items-center lg:flex-row lg:justify-between lg:items-center max-w-6xl mx-auto mt-35 lg:mt-20 pb-14">
           <div className="flex flex-col items-center justify-center space-y-6 ">
             <div className="text-center border-1 border-primary px-2 py-1 rounded-full lg:text-left lg:w-full lg:border-0">
