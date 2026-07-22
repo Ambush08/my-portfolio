@@ -1,14 +1,12 @@
 import { useRef, useState } from "react";
 import { menu } from "../Backend/data";
 import useOutSideClick from './useOutSideClick'
-import { Link, useLocation } from "react-router-dom";
+import { Link} from "react-scroll";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Navbar = ({ theme, setTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
   
- //const location = useLocation()
-  console.log(location);
 
  const menuRef = useRef(null);
 
@@ -24,7 +22,10 @@ const Navbar = ({ theme, setTheme }) => {
     <header className="w-full p-8 shadow-lg bg-header z-20 fixed">
       <div className="max-w-6xl mx-auto flex items-center justify-between text-heading">
         <Link
-          to="/"
+          to="home"
+          smooth={true}
+          duration={500}
+          offset={-80}
           className="text-2xl font-extrabold lg:text-4xl cursor-pointer"
         >
           Ambush.<span className="text-primary text-heading">Dev</span>
@@ -46,9 +47,14 @@ const Navbar = ({ theme, setTheme }) => {
         >
           {menu.map((item) => {
             return (
-              <li key={item.label} className={`hover:text-primary ${location.pathname === item.url && 'lg:text-primary border-b-2 border-primary'}`}>
+              <li key={item.label} className={`hover:text-primary`}>
                 <Link
                   to={item.url}
+                  smooth={true}
+                  duration={500}
+                  offset={-80}
+                  spy={true}
+                  activeClass="text-primary"
                   onClick={() => {
                     setIsOpen(false);
                   }}
