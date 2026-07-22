@@ -6,7 +6,7 @@ import Home from './Pages/Home';
 
 const App = () => {
 
-  const [theme, setTheme] = useLocalStorage('theme', 'light');
+  const [theme, setTheme] = useLocalStorage('theme', 'dark');
 
 
   useEffect(()=>{

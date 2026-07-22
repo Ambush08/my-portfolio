@@ -15,7 +15,7 @@ const Navbar = ({ theme, setTheme }) => {
   })
 
   const toggleTheme = () => {
-    theme === "dark" ? setTheme("light") : setTheme("dark");
+    theme === "light" ? setTheme("dark") : setTheme("light");
   };
 
   return (
@@ -54,7 +54,8 @@ const Navbar = ({ theme, setTheme }) => {
                   duration={500}
                   offset={-80}
                   spy={true}
-                  activeClass="text-primary"
+                  className="pb-1"
+                  activeClass="text-primary border-b-primary border-b-2"
                   onClick={() => {
                     setIsOpen(false);
                   }}
