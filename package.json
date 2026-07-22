@@ -1,4 +1,10 @@
 {
+  "name": "myportfolio-root",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix portfolio install && npm --prefix portfolio run build",
+    "dev": "npm --prefix portfolio run dev"
+  },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
     "tailwindcss": "^4.3.3"
