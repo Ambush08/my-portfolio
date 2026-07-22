@@ -7,7 +7,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 const Navbar = ({ theme, setTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
   
-  const location = useLocation()
+ //const location = useLocation()
   console.log(location);
 
  const menuRef = useRef(null);
