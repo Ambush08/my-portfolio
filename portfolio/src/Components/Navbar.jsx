@@ -55,7 +55,7 @@ const Navbar = ({ theme, setTheme }) => {
                   offset={-80}
                   spy={true}
                   className="pb-1"
-                  activeClass="text-primary border-b-primary border-b-2"
+                  activeClass="lg:text-primary border-b-primary border-b-2"
                   onClick={() => {
                     setIsOpen(false);
                   }}
