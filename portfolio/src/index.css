@@ -11,7 +11,10 @@ body{
   --app-background-two:#F0EDEE;
   --app-header: #ffffff;
   --app-github: #e62872;
-  
+
+  --app-glass-bg: rgba(255, 255, 255, 0.75);
+  --app-glass-border: rgba(94, 59, 238, 0.15);
+  --app-glass-shadow: rgba(94, 59, 238, 0.12);
 }
 
 [data-theme="dark"] {
@@ -21,6 +24,10 @@ body{
   --app-background-two: #2A2D43;
   --app-header: #0C1B33;
   --app-github: #e62872;
+
+  --app-glass-bg: rgba(12, 27, 51, 0.7);
+  --app-glass-border: rgba(255, 255, 255, 0.08);
+  --app-glass-shadow: rgba(0, 0, 0, 0.35);
 }
 
 @theme {
@@ -53,5 +60,13 @@ body{
     color: #1c1e53;
 }
 
-
+@layer components {
+  .glass{
+    background: var(--app-glass-bg);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--app-glass-border);
+    box-shadow: 0 8px 32px var(--app-glass-shadow);
+  }
+}
 

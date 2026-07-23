@@ -1,4 +1,6 @@
 import {Element} from 'react-scroll';
+import { RiNextjsFill } from "react-icons/ri";
+import { SiExpress } from "react-icons/si";
 
 const About = () => {
 
@@ -100,30 +102,30 @@ const About = () => {
                   <h4>React</h4>
                 </li>
                 <li className="flex items-center justify-center gap-4 bg-header p-3 rounded-lg text-sm font-semibold">
-                  <i class="fa-brands fa-react text-primary"></i>
+                   <RiNextjsFill size={20} className="text-primary" />
                   <h4>Next JS</h4>
                 </li>
                 <li className="flex items-center justify-center gap-4 bg-header p-3 rounded-lg text-sm font-semibold">
-                  <i class="fa-brands fa-react text-primary"></i>
-                  <h4>Javascript</h4>
+                 <i class="fa-brands fa-typescript text-primary"></i>
+                  <h4>TypeScript</h4>
                 </li>
                 <li className="flex items-center justify-center gap-4 bg-header p-3 rounded-lg text-sm font-semibold">
-                  <i class="fa-brands fa-react text-primary"></i>
+                  <i class="fa-brands fa-tailwind-css text-primary"></i>
                   <h4>Tailwind CSS</h4>
                 </li>
                 <li className="flex items-center justify-center gap-4 bg-header p-3 rounded-lg text-sm font-semibold">
-                  <i class="fa-brands fa-react text-primary"></i>
+                  <i class="fa-brands fa-node-js text-primary"></i>
                   <h4>Node JS</h4>
                 </li>
                 <li className="flex items-center justify-center gap-4 bg-header p-3 rounded-lg text-sm font-semibold">
-                  <i class="fa-brands fa-react text-primary"></i>
+                 <SiExpress size={20} className="text-primary" />
                   <h4>Express JS</h4>
                 </li>
               </ul>
             </div>
 
             <div className="flex flex-col tems-center justify-between lg:flex-row bg-header rounded-lg p-5 m-5 space-y-4 w-full">
-              <div className="flex items-center justify-center space-x-3 lg:border-r-1 lg:border-r-gray-500 lg:w-[50%]">
+              <div className="flex items-center justify-center space-x-3 lg:border-r-1 lg:border-r-gray-500 lg:w-[45%] lg:pr-1">
                 <div className="text-primary px-2 text-3xl">
                   <i class="fa-solid fa-graduation-cap"></i>
                 </div>

@@ -1,8 +1,9 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { menu } from "../Backend/data";
 import useOutSideClick from './useOutSideClick'
 import { Link} from "react-scroll";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { HiSun } from "react-icons/hi";
 
 const Navbar = ({ theme, setTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,23 @@ const Navbar = ({ theme, setTheme }) => {
 
   useOutSideClick(menuRef, ()=>{
     //setIsOpen(false);
-  })
+  });
+  
+
+  useEffect(()=>{
+
+    const handleResize = () => {
+      if(window.innerWidth >= 1024) {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return ()=>{
+      window.removeEventListener('resize', handleResize);
+    };
+  },[]);
 
   const toggleTheme = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
@@ -43,7 +60,7 @@ const Navbar = ({ theme, setTheme }) => {
           )}
         </button>
         <ul ref={menuRef}
-          className={`${isOpen ? "block" : "hidden"} ${isOpen ? "nav-active" : ""} lg:flex lg:justify-between lg:items-center lg:gap-5 lg:font-semibold text-heading text-lg`}
+          className={`${isOpen ? "block" : "hidden"} ${isOpen ? "nav-active" : ""} lg:flex lg:justify-between lg:items-center lg:rounded-full lg:px-3 lg:py-1 lg:gap-5 lg:font-semibold text-heading text-m ${!isOpen ? "glass" : ""}`}
         >
           {menu.map((item) => {
             return (
@@ -89,7 +106,7 @@ const Navbar = ({ theme, setTheme }) => {
                   } border rounded-full p-1 cursor-pointer`}
                 >
                   {theme === "dark" ? (
-                    <i className="fa-solid fa-sun"></i>
+                    <HiSun size={24} />
                   ) : (
                     <i className="fa-solid fa-moon"></i>
                   )}
@@ -111,7 +128,7 @@ const Navbar = ({ theme, setTheme }) => {
             className={`text-xl ${theme === "dark" ? "text-white" : "text-primary"} border-1 rounded-full p-1 cursor-pointer`}
           >
             {theme === "dark" ? (
-              <i class="fa-solid fa-sun"></i>
+              <HiSun size={24} />
             ) : (
               <i className="fa-solid fa-moon"></i>
             )}
