@@ -5,7 +5,6 @@ import Portfolio from '../Components/Portfolio';
 import Skills from '../Components/Skills';
 import Testimonial from '../Components/Testimonial';
 import Contacts from '../Components/Contacts';
-import Footer from '../Components/Footer';
 
 
 const Home = () => {
@@ -17,7 +16,6 @@ const Home = () => {
         <Skills />
         <Testimonial />
         <Contacts />
-        <Footer />
     </>
   )
 }
