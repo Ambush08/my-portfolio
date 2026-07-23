@@ -5,7 +5,7 @@ import {projects} from '../Backend/data';
 const Portfolio = () => {
   return (
     <Element>
-      <section className="bg-background text-heading w-full px-8 py-15">
+      <section id="portfolio" className="bg-background text-heading w-full px-8 py-15">
         <div className="max-w-6xl mx-auto flex flex-col items-center      justify-center space-y-5 my-8">
           <div className="flex flex-col items-center space-y-5">
             <div className="text-l text-primary pb-3 border-b-2 border-b-primary border-b-w-lg">

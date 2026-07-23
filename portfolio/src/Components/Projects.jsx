@@ -32,7 +32,7 @@ const Projects = ({projects}) => {
     <div className="flex flex-col items-center justify-center lg:flex-row gap-4 py-6">
         {
             projects.map((project, index) => {
-                return <div key={project.title} className="bg-background-two p-4 rounded-lg space-y-4 w-[70%]">
+                return <div key={project.title} className="bg-background-two p-4 rounded-lg space-y-4 lg:w-[70%]">
                     <div className="contain-content w-full rounded-lg">
                         <img src={project.image} alt={project.tittle} />
                     </div>
@@ -46,13 +46,13 @@ const Projects = ({projects}) => {
                         <p>{project.description}</p>
                     </div>
                     <div className="flex items-center justify-between">
-                        <div onClick={() => openTools(index)} className="bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent cursor-pointer flex items-center gap-1">
+                        <div onClick={() => openTools(index)} className="bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent hover:font-bold cursor-pointer flex items-center gap-1">
                             {
                                 showContent ? <h3>View Less</h3> : <h3>View More</h3>
                             }
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
-                    <div className="text-github cursor-pointer flex items-center gap-1">
+                    <div className="text-github pb-1 hover:text-red-500 transition-colors hover:border-b-2 hover:border-b-text-red-500  cursor-pointer flex items-center gap-1">
                         <a href="https://github.com/Ambush08" target="_blank">Visit Github</a>
                         <FiArrowUpRight />
                     </div>
