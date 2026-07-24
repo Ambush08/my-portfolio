@@ -4,6 +4,7 @@ import About from '../Components/About';
 import Portfolio from '../Components/Portfolio';
 import Testimonial from '../Components/Testimonial';
 import Contacts from '../Components/Contacts';
+import Footer from '../Components/Footer';
 
 
 const Home = () => {
@@ -14,7 +15,7 @@ const Home = () => {
         <Portfolio />
         <Testimonial />
         <Contacts />
-        
+        <Footer /> 
     </>
   )
 }

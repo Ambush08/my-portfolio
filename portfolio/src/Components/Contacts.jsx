@@ -32,10 +32,10 @@ const Contacts = () => {
   return (
     <section
       id="contacts"
-      className="bg-background w-full px-8 py-10 text-heading min-h-screen"
+      className="bg-background w-full px-8 py-10 text-heading"
     >
       <div className="flex flex-col items-center justify-center max-w-6xl mx-auto my-10 space-y-10">
-        <div className="flex flex-col items-center space-y-5 pt-8">
+        <div className="flex flex-col items-center space-y-5 py-8">
           <div className="text-3xl font-bold lg:text-5xl">
             <h2>
               Get in{" "}
