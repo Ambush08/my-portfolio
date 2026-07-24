@@ -58,7 +58,7 @@ const Footer = () => {
               inbox.
             </p>
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-4">
             <input
               className="border-1 border-gray-500 px-3 py-2 rounded-lg focus:outline-0"
               type="email"
