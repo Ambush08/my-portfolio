@@ -50,7 +50,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className=" bg-background  px-3 py-3 rounded-xl flex flex-col items-start justify-center space-y-4 lg:space-y-8 ">
+        <div className=" bg-background  px-1 py-3 rounded-xl flex flex-col items-start justify-center space-y-4 lg:space-y-8 ">
           <div className="flex flex-col items-start space-y-3 lg:pt-4">
             <h2 className="font-semibold">Subscribe to my newsletter.</h2>
             <p className="opacity-80 text-xs lg:text-sm">
