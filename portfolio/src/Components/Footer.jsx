@@ -19,7 +19,7 @@ const Footer = () => {
             </Link>
           </div>
 
-          <div className="opacity-80 text-sm tracking-wide lg:text-md">
+          <div className="opacity-80 text-sm tracking-wide text-xs lg:text-md">
             <p>
               Designed and developed with passion using React and modern web
               technologies. Thanks for visiting my portfolio. I look forward to
@@ -27,7 +27,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <ul className="flex  items-center gap-4 text-sm lg:text-md">
+          <ul className="flex  items-center gap-2 text-xs lg:text-md">
             {menu.map((item) => {
               return (
                 <li
