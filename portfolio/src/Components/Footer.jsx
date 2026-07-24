@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <section className="bg-header w-full px-8 py-10">
       <div className="flex flex-col items-start max-w-6xl mx-auto text-heading lg:flex-row lg:justify-between space-y-8 gap-10 pd-6 border-b-1 border-b-gray-500">
-        <div className="flex flex-col space-y-4 items-start lg:w-[45%]">
+        <div className="flex flex-col space-y-4 items-start lg:w-[50%]">
           <div>
             <Link
               to="home"
