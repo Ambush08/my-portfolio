@@ -2,7 +2,7 @@
 import Hero from '../Components/Hero';
 import About from '../Components/About';
 import Portfolio from '../Components/Portfolio';
-import Skills from '../Components/Skills';
+import Testimonial from '../Components/Testimonial';
 
 
 const Home = () => {
@@ -11,7 +11,8 @@ const Home = () => {
         <Hero />
         <About />
         <Portfolio />
-        <Skills />
+        <Testimonial />
+        
     </>
   )
 }

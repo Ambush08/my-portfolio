@@ -79,4 +79,36 @@ export const projects = [
         description:"A responsive portfolio website showcasings my skills, projects I have built and my edcation background.",
         tools:['React', 'Tailwind CSS']
     }
+];
+
+
+export const testimonies = [
+    {
+        rating: 5,
+        description: '"Working with Warren was a fantastic experience. He transformed our ideas into a fast, responsive website with a modern design. Communication was excellent throughout the project, and the final product exceeded our expectations."',
+        name: "Sarah Mitchell",
+        title: "Founder, BrightWave Digital", 
+        profile: "img/avatar1.jpg"
+    },
+    {
+        rating: 5,
+        description: '"Warren delivered a clean, professional website that perfectly represents our brand. His attention to detail, problem-solving skills, and ability to meet deadlines made the entire process smooth and stress-free."',
+        name: "David Richards",
+        title: "Operations Manager, Gates Solutions", 
+        profile: "img/avatar2.jpg"
+    },
+     {
+        rating: 5,
+        description: `"From the initial concept to deployment, Warren demonstrated exceptional technical expertise and creativity. The website performs flawlessly across devices, and we've received countless compliments from our clients."`,
+        name: "Aisha Juma",
+        title: "Marketing Director, Nova Creative", 
+        profile: "img/avatar4.jpg"
+    },
+    {
+        rating: 5,
+        description: '"I highly recommend Warren to anyone looking for a reliable full stack developer. He built a beautiful, user-friendly website with excellent performance and intuitive navigation.."',
+        name: "Michael Owens",
+        title: "Business Owner, NextGen Solutions", 
+        profile: "img/avatar3.jpg"
+    }
 ]
