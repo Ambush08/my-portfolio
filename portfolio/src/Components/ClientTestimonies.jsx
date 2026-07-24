@@ -1,4 +1,4 @@
-import Rating from './Rating.jsx';
+import Rating from './Rating';
 
 const ClientTestimonies = ({testimonies}) => {
   return (
