@@ -4,7 +4,7 @@ import {testimonies} from '../Backend/data';
 
 const Testimonial = () => {
   return (
-    <section id="testimonial" className="bg-background-two px-8 py-10 w-full">
+    <section id="testimonial" className="bg-background-two px-8 py-10 w-full min-h-screen">
       <div className="flex flex-col items-center justify-center gap-5 max-w-6xl mx-auto my-10 py-8 text-heading">
         <div className="flex flex-col items-center justify-center space-y-5 ">
           <div className="text-primary border-b-2 border-b-primary pb-2 font-semibold">
