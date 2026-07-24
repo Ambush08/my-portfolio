@@ -5,7 +5,7 @@ import { FaXTwitter, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa6";
 const Footer = () => {
   return (
     <section className="bg-header w-full px-8 py-10">
-      <div className="flex flex-col items-start max-w-6xl mx-auto text-heading lg:flex-row lg:justify-between space-y-4 gap-10 pb-6 border-b-1 border-b-gray-500">
+      <div className="flex flex-col items-start max-w-6xl mx-auto text-heading lg:flex-row lg:justify-between space-y-8 gap-10 pd-6 border-b-1 border-b-gray-500">
         <div className="flex flex-col space-y-4 items-start">
           <div>
             <Link
@@ -50,10 +50,10 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className=" bg-background  px-1 py-3 rounded-xl flex flex-col items-start justify-center space-y-4 lg:space-y-8 ">
+        <div className="flex flex-col items-start justify-center space-y-4 lg:space-y-8 pb-6">
           <div className="flex flex-col items-start space-y-3 lg:pt-4">
             <h2 className="font-semibold">Subscribe to my newsletter.</h2>
-            <p className="opacity-80 text-xs lg:text-sm">
+            <p className="opacity-80 text-sm lg:text-md">
               The latest offers, services, articles and resources sent to your
               inbox.
             </p>
