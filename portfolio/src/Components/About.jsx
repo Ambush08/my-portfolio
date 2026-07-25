@@ -1,20 +1,31 @@
-import {Element} from 'react-scroll';
+import { motion } from "motion/react"
 import { RiNextjsFill } from "react-icons/ri";
 import { SiExpress } from "react-icons/si";
 
 const About = () => {
 
   return (
-    <Element name='about'>
       <section id="about"
         className="w-full px-8 py-10 bg-background-two text-heading"
       >
-        <div className="flex flex-col flex-col-reverse items-center justify-center max-w-6xl mx-auto mt-15 lg:flex-row gap-10">
-          <div className="w-full lg:w-[40%]">
+        <div
+    
+        className="flex flex-col flex-col-reverse items-center justify-center max-w-6xl mx-auto mt-15 lg:flex-row gap-10">
+          <motion.div
+            initial={{x:-50, opacity:0}}
+            whileInView={{x:0 , opacity: 1}}
+            transition={{duration:0.9}}
+          
+          className="w-full lg:w-[40%]">
             <img src="img/me.png" alt="" />
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col items-center justify-center space-y-6 lg:w-[60%]">
+          <motion.div
+            initial={{x:50, opacity:0}}
+            whileInView={{x:0 , opacity: 1}}
+            transition={{duration:0.9}}
+          
+          className="flex flex-col items-center justify-center space-y-6 lg:w-[60%]">
             <div className="text-primary text-center lg:text-left lg:w-full font-semibold mb-4">
               <h2 className="">ABOUT ME</h2>
             </div>
@@ -124,7 +135,8 @@ const About = () => {
               </ul>
             </div>
 
-            <div className="flex flex-col tems-center justify-between lg:flex-row bg-header rounded-lg p-5 m-5 space-y-4 w-full">
+            <div
+            className="flex flex-col tems-center justify-between lg:flex-row bg-header rounded-lg p-5 m-5 space-y-4 w-full">
               <div className="flex items-center justify-center space-x-3 lg:border-r-1 lg:border-r-gray-500 lg:w-[45%] lg:pr-1">
                 <div className="text-primary px-2 text-3xl">
                   <i class="fa-solid fa-graduation-cap"></i>
@@ -150,9 +162,15 @@ const About = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
-        <div className="flex flex-col bg-header rounded-lg items-center justify-between lg:flex-row gap-3 max-w-6xl mx-auto p-8 mt-10 lg:mt-0">
+
+        <motion.div
+           initial={{y:20, opacity:0}}
+            whileInView={{y:0 , opacity: 1}}
+            transition={{duration:0.8}}
+        
+        className="flex flex-col bg-header rounded-lg items-center justify-between lg:flex-row gap-3 max-w-6xl mx-auto p-8 mt-10 lg:mt-0">
           <div className="flex items-center justify-center space-x-4 gap-3 lg:border-r-1 border-r-gray-500 lg:pr-8">
             <div className="text-primary text-3xl">
               <i class="fa-regular fa-face-smile"></i>
@@ -192,9 +210,9 @@ const About = () => {
               <h3 className="opacity-80">Certifications</h3>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
-    </Element>
+
   );
 };
 

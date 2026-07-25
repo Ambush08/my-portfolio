@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { motion } from "motion/react"
 import { menu } from "../Backend/data";
 import useOutSideClick from './useOutSideClick'
 import { Link} from "react-scroll";
@@ -36,7 +37,12 @@ const Navbar = ({ theme, setTheme }) => {
   };
 
   return (
-    <header className="w-full p-8 shadow-lg bg-header z-20 fixed">
+    <motion.header 
+      initial={{opacity: 0, y:-40}}
+      whileInView={{opacity:1, y:0}}
+      transition={{ duration: 0.6 }}
+    
+    className="w-full p-8 shadow-lg bg-header z-20 fixed">
       <div className="max-w-6xl mx-auto flex items-center justify-between text-heading">
         <Link
           to="home"
@@ -135,7 +141,7 @@ const Navbar = ({ theme, setTheme }) => {
           </button>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 };
 

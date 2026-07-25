@@ -1,8 +1,14 @@
+import { motion } from "motion/react"
 import Rating from './Rating';
 
 const ClientTestimonies = ({testimonies}) => {
   return (
-    <div className="grid lg:grid-cols-3 gap-4 mt-10">
+    <motion.div
+        initial={{y:40, opacity:0}}
+        whileInView={{y:0, opacity:1}}
+        transition={{duration: 0.8}}
+    
+    className="grid lg:grid-cols-3 gap-4 mt-10">
         {
             testimonies.map((testimonie) => {
                 return (
@@ -27,7 +33,7 @@ const ClientTestimonies = ({testimonies}) => {
                 )
             })
         }
-    </div>
+    </motion.div>
   )
 }
 

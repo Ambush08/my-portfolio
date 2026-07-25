@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import { motion } from "motion/react"
 import Tools from './Tools';
 import { FiArrowUpRight } from "react-icons/fi";
 
@@ -29,7 +30,12 @@ const Projects = ({projects}) => {
     }
 
   return (
-    <div className="flex flex-col items-center justify-center lg:flex-row gap-4 py-6">
+    <motion.div
+        initial={{x:-40, opacity:0}}
+        whileInView={{x:0 , opacity: 1}}
+        transition={{duration:0.8}}
+    
+    className="flex flex-col items-center justify-center lg:flex-row gap-4 py-6">
         {
             projects.map((project, index) => {
                 return <div key={project.title} className="bg-background-two p-4 rounded-lg space-y-4 lg:w-[70%] group">
@@ -64,7 +70,7 @@ const Projects = ({projects}) => {
                 </div>
             })
         }
-    </div>
+    </motion.div>
   )
 }
 

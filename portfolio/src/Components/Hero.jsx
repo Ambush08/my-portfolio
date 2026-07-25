@@ -1,11 +1,23 @@
-import { Link, Element } from "react-scroll";
+import { Link } from "react-scroll";
+import { motion } from "motion/react"
 
 const Hero = () => {
   return (
-    <Element name="home">
       <section id="home" className="w-full px-8 py-10 bg-background h-100vh">
-        <div className="flex flex-col items-center lg:flex-row lg:justify-between lg:items-center max-w-6xl mx-auto mt-35 lg:mt-20 pb-14">
-          <div className="flex flex-col items-center justify-center space-y-6 ">
+        <motion.div
+          initial={{y:50, opacity:0}}
+          whileInView={{y:0 , opacity: 1}}
+          transition={{duration:0.8}}
+        
+        className="flex flex-col items-center lg:flex-row lg:justify-between lg:items-center max-w-6xl mx-auto mt-35 lg:mt-20 pb-14">
+          <motion.div
+            
+
+            initial={{x:-40, opacity:0}}
+            whileInView={{x:0, opacity:1}}
+            transition={{duration:0.8}}
+          
+          className="flex flex-col items-center justify-center space-y-6 ">
             <div className="text-center border-1 border-primary px-2 py-1 rounded-full lg:text-left lg:w-full lg:border-0">
               <h3 className="font-semibold text-2xl lg:text-3xl lg:text-left bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent">
                 Hey, I'm Warren.
@@ -48,13 +60,17 @@ const Hero = () => {
                 <i class="fa-solid fa-download"></i>
               </a>
             </div>
-          </div>
-          <div className="py-6">
+          </motion.div>
+          <motion.div
+            initial={{x:40, opacity:0}}
+            whileInView={{x:0, opacity:1}}
+            transition={{duration:0.8}}
+
+          className="py-6">
             <img src="img/me.png" alt="" />
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </section>
-    </Element>
   );
 };
 

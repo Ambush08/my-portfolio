@@ -1,3 +1,4 @@
+import { motion } from "motion/react"
 import ClientTestimonies from './ClientTestimonies';
 import {testimonies} from '../Backend/data';
 
@@ -5,8 +6,18 @@ import {testimonies} from '../Backend/data';
 const Testimonial = () => {
   return (
     <section id="testimonial" className="bg-background-two px-8 py-10 w-full min-h-screen">
-      <div className="flex flex-col items-center justify-center gap-5 max-w-6xl mx-auto my-10 py-8 text-heading">
-        <div className="flex flex-col items-center justify-center space-y-5 ">
+      <motion.div
+        initial={{y:50, opacity:0}}
+        whileInView={{y:0 , opacity: 1}}
+        transition={{duration:0.8}}
+      
+      className="flex flex-col items-center justify-center gap-5 max-w-6xl mx-auto my-10 py-8 text-heading">
+        <motion.div
+          initial={{x:-50, opacity:0}}
+          whileInView={{x:0, opacity:1}}
+          transition={{duration: 0.8}}
+        
+        className="flex flex-col items-center justify-center space-y-5 ">
           <div className="text-primary border-b-2 border-b-primary pb-2 font-semibold">
             <h2>TESTIMONIALS</h2>
           </div>
@@ -25,10 +36,10 @@ const Testimonial = () => {
               with me and the results we achieved together.
             </p>
           </div>
-        </div>
+        </motion.div>
 
         <ClientTestimonies testimonies={testimonies}/>
-      </div>
+      </motion.div>
     </section>
   );
 };
