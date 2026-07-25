@@ -1,34 +1,12 @@
-import toast from "react-hot-toast";
+
 import { motion } from "motion/react"
+import {GlobalContext} from '../Context/GlobalState'
 import { FaUser, FaEnvelope, FaArrowRight } from "react-icons/fa";
+import { useContext } from "react";
 
 const Contacts = () => {
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    
-    const form = event.target;
-    const formData = new FormData(form);
-
-    formData.append("access_key", "be3805a1-9998-4b3e-abc4-fe5fbfa44110");
-
-    try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: formData,
-      });
-
-      const data = await response.json();
-      if (data.success) {
-        toast.success("Message sent successfully!");
-        form.reset();
-      } else {
-        toast.error(data.message || "Failed to send message.");
-      }
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
+  const {handleSubmit} = useContext(GlobalContext);
 
   return (
     <section

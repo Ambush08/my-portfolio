@@ -1,9 +1,14 @@
 import { Link } from "react-scroll";
+import {useContext} from 'react'
 import { motion } from "motion/react"
+import {GlobalContext} from '../Context/GlobalState'
 import { menu } from "../Backend/data";
 import { FaXTwitter, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa6";
 
 const Footer = () => {
+
+  const {handleSubmit} = useContext(GlobalContext);
+
   return (
     <section className="bg-header w-full px-8 py-10">
       <div className="flex flex-col items-start max-w-6xl mx-auto text-heading lg:flex-row lg:justify-between space-y-8 gap-10 pd-6 border-b-1 border-b-gray-500">
@@ -68,8 +73,8 @@ const Footer = () => {
               inbox.
             </p>
           </div>
-          <div className="flex items-center gap-4">
-            <input
+            <form action="" onSubmit={handleSubmit} className="flex items-center gap-4">
+              <input
               className="border-1 border-gray-500 px-3 py-2 rounded-lg focus:outline-0"
               type="email"
               name="email"
@@ -79,7 +84,7 @@ const Footer = () => {
             <button type="submit" className="bg-primary px-3 py-2 rounded-lg">
               Subscribe
             </button>
-          </div>
+            </form>
         </motion.div>
       </div>
 
