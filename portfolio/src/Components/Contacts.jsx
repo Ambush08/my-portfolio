@@ -83,7 +83,7 @@ const Contacts = () => {
 
             <button
               type="submit"
-              className="flex items-center font-semibold gap-1 bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent border-primary rounded-lg border-1 py-2 px-2 justify-center"
+              className="flex cursor-pointer items-center font-semibold gap-1 bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent border-primary rounded-lg border-1 py-2 px-2 justify-center"
             >
               Submit
               <FaArrowRight className="text-primary" />
