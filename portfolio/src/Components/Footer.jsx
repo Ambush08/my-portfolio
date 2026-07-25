@@ -81,7 +81,7 @@ const Footer = () => {
               placeholder="Enter your email..."
               required
             />
-            <button type="submit" className="bg-primary px-3 py-2 rounded-lg">
+            <button type="submit" className="bg-primary px-3 py-2 rounded-lg cursor-pointer">
               Subscribe
             </button>
             </form>
