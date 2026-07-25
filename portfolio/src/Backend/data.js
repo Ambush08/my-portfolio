@@ -77,7 +77,7 @@ export const projects = [
         type: "Portfolio",
         title: "Ambush.dev",
         description:"A responsive portfolio website showcasings my skills, projects I have built and my edcation background.",
-        tools:['React', 'Tailwind CSS']
+        tools:['React', 'Tailwind CSS', 'Framer Motion']
     }
 ];
 
