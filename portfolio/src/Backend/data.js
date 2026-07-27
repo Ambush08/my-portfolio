@@ -73,7 +73,7 @@ export const projects = [
         tools:['React', 'Tailwind CSS', 'Node JS','Mongo DB']
     },
     {
-        image: "img/project3.png",
+        image: "img/portfolio3.png",
         type: "Portfolio",
         title: "Ambush.dev",
         description:"A responsive portfolio website showcasings my skills, projects I have built and my edcation background.",
