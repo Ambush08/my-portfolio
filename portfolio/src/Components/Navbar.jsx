@@ -94,6 +94,10 @@ const Navbar = ({ theme, setTheme }) => {
               <li>
                 <Link
                   to="contacts"
+                  smooth={true}
+                  duration={500}
+                  offset={-80}
+                  spy={true}
                   onClick={() => {
                     setIsOpen(false);
                   }}
