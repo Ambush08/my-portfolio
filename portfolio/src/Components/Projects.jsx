@@ -40,7 +40,7 @@ const Projects = ({projects}) => {
             projects.map((project, index) => {
                 return <div key={project.title} className="bg-background-two p-4 rounded-lg space-y-4 lg:w-[70%] group">
                     <div className="contain-content w-full rounded-lg objec-cover transition-transform duration-700 group-hover:scale-110">
-                        <img src={project.image} alt={project.tittle} />
+                        <img src={project.image} alt={project.tittle}/>
                     </div>
                     <div className="bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent font-bold">
                         <h3>{project.type}</h3>

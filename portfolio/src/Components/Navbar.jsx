@@ -97,7 +97,7 @@ const Navbar = ({ theme, setTheme }) => {
                   onClick={() => {
                     setIsOpen(false);
                   }}
-                  className="border border-white px-2 py-1 rounded-lg hover:bg-primary hover:text-white transition-colors duration-300"
+                  className="border border-white cursor-pointer px-2 py-1 rounded-lg hover:bg-primary hover:text-white transition-colors duration-300"
                 >
                   Connect
                   <i class="fa-solid fa-arrow-right"></i>
@@ -124,7 +124,7 @@ const Navbar = ({ theme, setTheme }) => {
         <div className="hidden lg:flex lg:items-center lg:gap-3 lg:justify-center">
           <Link
             to="contacts"
-            className="border-1 border-primary px-3 py-2 rounded-lg hover:bg-primary hover:text-white transition-colors duration-300"
+            className="border-1 cursor-pointer border-primary px-3 py-2 rounded-lg hover:bg-primary hover:text-white transition-colors duration-300"
           >
             Connect
             <i class="fa-solid fa-arrow-right"></i>
