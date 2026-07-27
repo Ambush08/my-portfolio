@@ -148,7 +148,7 @@ const About = () => {
                   <div className="text-xl space-y-3 opacity-80">
                     <h3>Bachelor of Science</h3>
                     <span className="bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent">
-                      Mathematics and Comuter Science
+                      Mathematics and Computer Science
                     </span>
                   </div>
                 </div>

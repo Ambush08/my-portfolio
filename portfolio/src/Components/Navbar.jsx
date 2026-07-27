@@ -57,7 +57,7 @@ const Navbar = ({ theme, setTheme }) => {
           onClick={() => {
             setIsOpen(!isOpen);
           }}
-          className={`text-2xl cursor-pointer lg:hidden z-50 ${isOpen && "text-white"}`}
+          className={`text-2xl cursor-pointer mr-2 lg:hidden z-50 ${isOpen && "text-white"}`}
         >
           {isOpen ? (
             <i className="fa-solid fa-x"></i>
