@@ -61,7 +61,7 @@ const Footer = () => {
         </motion.div>
 
         <motion.div
-          initial={{x:50, opacity:0}}
+          initial={{x:20, opacity:0}}
           whileInView={{x:0, opacity:1}}
           transition={{duration: 0.8}}
         
@@ -73,15 +73,15 @@ const Footer = () => {
               inbox.
             </p>
           </div>
-            <form action="" onSubmit={handleSubmit} className="flex items-center gap-4">
+            <form action="" onSubmit={handleSubmit} className="flex items-center gap-2">
               <input
-              className="border-1 border-gray-500 px-3 py-2 rounded-lg focus:outline-0"
+              className="border-1 border-gray-500 px-1 py-2 rounded-lg focus:outline-0"
               type="email"
               name="email"
               placeholder="Enter your email..."
               required
             />
-            <button type="submit" className="bg-primary px-3 py-2 rounded-lg cursor-pointer">
+            <button type="submit" className="bg-primary px-2 py-2 rounded-lg cursor-pointer">
               Subscribe
             </button>
             </form>
@@ -89,7 +89,7 @@ const Footer = () => {
       </div>
 
       <motion.div
-        initial={{x:-50, opacity:0}}
+        initial={{x:-20, opacity:0}}
         whileInView={{x:0, opacity:1}}
         transition={{duration: 0.8}}
       
