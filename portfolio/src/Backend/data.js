@@ -66,9 +66,9 @@ export const projects = [
         tools:['React', 'Tailwind CSS', 'Node JS','PostgreSQL']
     },
     {
-        image: "img/project2.png",
-        type: "Blog",
-        title: "Blog.dev",
+        image: "img/music-app.png",
+        type: "Music App",
+        title: "Ambush.Beats",
         description:"A responsive blog website where I share articles about web development, tools, tuttorials and my journy as a developer.",
         tools:['React', 'Tailwind CSS', 'Node JS','Mongo DB']
     },
