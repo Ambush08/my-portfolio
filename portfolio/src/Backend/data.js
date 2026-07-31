@@ -69,8 +69,8 @@ export const projects = [
         image: "img/music-app.png",
         type: "Music App",
         title: "Ambush.Beats",
-        description:"A responsive blog website where I share articles about web development, tools, tuttorials and my journy as a developer.",
-        tools:['React', 'Tailwind CSS', 'Node JS','Mongo DB']
+        description:"A responsive music app where you can stream your music and add them to favorites list stored in local storage.",
+        tools:['React', 'Tailwind CSS', 'CSS']
     },
     {
         image: "img/portfolio3.png",
