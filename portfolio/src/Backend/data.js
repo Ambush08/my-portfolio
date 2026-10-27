@@ -59,11 +59,11 @@ export const skills = [
 
 export const projects = [
     {
-        image: "img/project1.png",
-        type: "E-Commerce",
-        title: "Crypto Tracker",
-        description:"A full e-commerce website for selling smartwatches and accessories with product filtering, search, cart and secure checkout.",
-        tools:['React', 'Tailwind CSS', 'Node JS','PostgreSQL']
+        image: "img/project4.png",
+        type: "Job App",
+        title: "KaziFiti",
+        description:"A full-stack job app with job listings, saved jobs, job categories, filter through jobs, job application, blogs and user authentication and authorization ",
+        tools:['React', 'Tailwind CSS', 'Node JS','MongoDB']
     },
     {
         image: "img/music-app.png",
